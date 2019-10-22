@@ -51,3 +51,4 @@
   * Synchronous scripts
 3. Again the Render Tree
 4. Speeding up with [async and defer](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
+4. Speeding up with [media queries](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css)

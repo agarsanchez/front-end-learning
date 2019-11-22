@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      color: black;
+    }
+  </style>
+  <style>
+    /*Styles from a 3rd party*/
+    #stubborn-block .inner-paragraph {
+      color: blue;
+    }
+  </style>
+
+  <style>
+    /**
+    The helpful ones but not so famous
+    */
+    [title]::after {
+      content: '-> Please hover me'
+    }
+
+    [id|=list-item] {
+      font-weight: bold;
+    }
+
+    [target=_blank]::after {
+      content: '-> opens on new window'
+    }
+
+    [href$=pdf]::after {
+      content: '-> pdf document'
+    }
+
+    [href*=santander] {
+      color: red;
+    }
+
+    [title~=pirates] {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <p>My shopping list</p>
+  <ul>
+    <li id="list-item-1">Banana</li>
+    <li id="list-item-2">Apple</li>
+    <li id="list-item-3">Pear</li>
+    <li id="list-item-4">Grape</li>
+    <li id="list-item-5">Orange</li>
+  </ul>
+
+  <p>Helpful links</p>
+  <ul>
+    <li><a href="#" title="This could be help, but who cares...">Helpful link</a></li>
+    <li>
+      <a href="https://www.w3.org/" target="_blank">General docs</a>
+    </li>
+    <li><a href="someDocument.pdf">Get my PDF</a></li>
+    <li>
+      <a href="https://santander.co.uk">Go to Santander public site</a>
+    </li>
+    <li>
+      <a href="https://santanderuk.corp">Go to Santander internal site</a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com" title="data pirates">(Don't) Go to Facebook</a>
+    </li>
+  </ul>
+
+  <div style="background-color: yellow;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nobis.</p>
+  </div>
+  <div id="stubborn-block">
+    <p class="inner-paragraph">first guy</p>
+    <p class="inner-paragraph">second guy</p>
+  </div>
+</body>
+
+</html>
